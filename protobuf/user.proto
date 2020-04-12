@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+
+service Greeter {
+  
+ 
+  rpc SendData (DataReq) returns(DataRes) {}
+}
+
+message DataReq {
+  string name =1;
+  string somethig =2;
+}
+
+message DataRes {
+  string reply = 1;
+
+}
